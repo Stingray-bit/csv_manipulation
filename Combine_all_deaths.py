@@ -19,8 +19,8 @@ def read_and_combine_files(src_dir):
 def save_to_csv(dataframe, dest_file):
     dataframe.to_csv(dest_file, index=False)
 
-source_directory = r"C:\Users\44741\Desktop\all_countries_death_1x1"  # Replace with your source directory path
-destination_file = r"C:\Users\44741\Desktop\all_countries_death_1x1\all_combined_1x1.csv"  # Replace with your destination CSV file path
+source_directory = r"C:\Users\44741\Desktop\all_countries_death_1x1" 
+destination_file = r"C:\Users\44741\Desktop\all_countries_death_1x1\all_combined_1x1.csv" 
 
 combined_data = read_and_combine_files(source_directory)
 save_to_csv(combined_data, destination_file)
